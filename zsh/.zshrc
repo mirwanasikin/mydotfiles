@@ -7,11 +7,14 @@ if [[ -o interactive ]] && [[ -z "$SSH_CONNECTION" ]]; then
 fi
 
 # History
+HISTFILE=$HOME/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
-setopt HIST_IGNORE_DUPS
+setopt appendhistory
+setopt sharehistory
+setopt inc_append_history 
+setopt hist_ignore_dups
+setopt hist_reduce_blanks
 
 # Completion
 autoload -Uz compinit
@@ -28,3 +31,25 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ===== Oh My Posh =====
 eval "$(oh-my-posh init zsh --config ~/jandedobbeleer.omp.json)"
+
+# ====== Zoxide ========
+eval "$(zoxide init zsh)"
+
+# ====== fzf key-binding ======
+source /usr/share/fzf/shell/key-bindings.zsh
+
+# ===== alias ========
+alias suhu='sensors'
+alias lz='ls -lahZ'
+alias cat='bat'
+alias vi='nvim'
+alias cl='clear'
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -lah --git'
+alias tree='eza --tree'
+alias cd='z'
+alias suspend='sudo systemctl suspend'
+alias reboot='sudo reboot now'
+
+# ======== nix =========
+if [ -e /home/tenka/.nix-profile/etc/profile.d/nix.sh ]; then . /home/tenka/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
