@@ -38,6 +38,7 @@
               tldr
               duf
               dust
+              lazygit
             ];
 
             # === FZF ===
