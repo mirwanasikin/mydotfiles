@@ -39,7 +39,6 @@
               duf
               dust
               lazygit
-              wezterm
             ];
 
             # === FZF ===
