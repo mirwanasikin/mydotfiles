@@ -39,6 +39,8 @@
               duf
               dust
               lazygit
+              bottom
+              procs
             ];
 
             # === FZF ===
