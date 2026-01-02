@@ -41,7 +41,6 @@
               lazygit
               bottom
               procs
-              kubetcl
             ];
 
             # === FZF ===
