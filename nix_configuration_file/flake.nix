@@ -44,6 +44,7 @@
 	            neovim
               lynx
               impala
+              bluetui
             ];
 
             # === FZF ===
