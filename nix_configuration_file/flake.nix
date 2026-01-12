@@ -42,7 +42,7 @@
               bottom
               procs
 	            neovim
-              bluetui
+              lynx
               impala
             ];
 
