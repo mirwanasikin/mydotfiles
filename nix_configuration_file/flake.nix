@@ -43,6 +43,8 @@
               procs
 	            neovim
               bluetui
+              cowsay
+              figlet
             ];
 
             # === FZF ===
