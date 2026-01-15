@@ -46,7 +46,6 @@
               cowsay
               figlet
               cava
-              feh
             ];
 
             # === FZF ===
