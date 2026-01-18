@@ -47,7 +47,6 @@
               figlet
               cava
               tmux
-              alacritty
             ];
 
             # === FZF ===
