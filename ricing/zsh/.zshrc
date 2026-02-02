@@ -62,7 +62,6 @@ fi
 export EDITOR=nvim
 export VISUAL=nvim
 
-
 # ===============================
 # Aliases
 # ===============================
@@ -72,10 +71,12 @@ alias vi='nvim'
 alias cl='clear'
 alias py='python3'
 alias ls='eza --icons --group-directories-first'
-alias ll='eza -lah --git'
+alias ll='eza -lahZ --git'
 alias tree='eza --tree'
 alias blue='bluetui'
-
+alias tb='toolbox enter'
+alias dbe='distrobox enter'
+alias tm='tmux'
 alias cd='z'        # opinionated, personal
 alias suspend='sudo systemctl suspend'
 alias reboot='sudo reboot now'
