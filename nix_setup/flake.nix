@@ -32,7 +32,6 @@
               ripgrep
               zoxide
               htop
-              fastfetch
               yazi
               speedtest-cli
               tldr
@@ -43,9 +42,6 @@
               procs
 	            neovim
               bluetui
-              cowsay
-              figlet
-              cava
               tmux
               aria2
             ];
