@@ -13,9 +13,9 @@ fi
 # ===============================
 # Fastfetch (local only)
 # ===============================
-if [[ -z "$SSH_CONNECTION" ]]; then
-  fastfetch
-fi
+# if [[ -z "$SSH_CONNECTION" ]]; then
+#   fastfetch
+# fi
 
 # ===============================
 # History
@@ -42,8 +42,7 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ===============================
 # Prompt
 # ===============================
-eval "$(oh-my-posh init zsh --config ~/jandedobbeleer.omp.json)"
-
+eval "$(starship init zsh)"
 # ===============================
 # Tools
 # ===============================
@@ -84,5 +83,11 @@ alias shutdown='sudo shutdown now'
 
 alias update='sudo /home/tenka/./upgrade.sh'
 alias nixupdate='cd /home/tenka/mydotfiles/nix_configuration_file && nix flake update && nix run home-manager/master -- switch --flake .#tenka' #Update nix
+alias snvim='sudo env "PATH=$HOME/.nix-profile/bin:$PATH" nvim -u /home/tenka/.config/nvim/init.lua'
+
+# =============================
+# Terminal Rocky Linux
+# =============================
+export TERM=xterm-256color
 
 if [ -e /home/tenka/.nix-profile/etc/profile.d/nix.sh ]; then . /home/tenka/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
