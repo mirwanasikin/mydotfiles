@@ -38,12 +38,13 @@
               duf
               dust
               lazygit
-              bottom
+              btop
               procs
 	            neovim
               bluetui
               tmux
               aria2
+              jq
             ];
 
             # === FZF ===
