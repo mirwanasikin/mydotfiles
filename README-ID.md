@@ -6,6 +6,8 @@ Ini adalah setup pribadi untuk fedora dan silahkan gunakan jika menarik.
 
 > **Aku bukanlah pemilik dari proyek upstream dan aku akan mention sumber yang aku gunakan**
 
+> **Repositori ini menggabungkan DNF, Flatpak dan Nix. Pemula tidak direkomendasikan menggunakan konfigurasi ini. Lakukan dengan resiko masing-masing**
+
 ## Konfigurasi
 Repositori ini akan mengkonfigurasi beberapa hal yaitu:
 - Update sistem 

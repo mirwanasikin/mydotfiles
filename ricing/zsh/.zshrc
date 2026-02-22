@@ -13,9 +13,9 @@ fi
 # ===============================
 # Fastfetch (local only)
 # ===============================
-# if [[ -z "$SSH_CONNECTION" ]]; then
-#   fastfetch
-# fi
+if [[ -z "$SSH_CONNECTION" ]]; then
+  fastfetch
+fi
 
 # ===============================
 # History
@@ -84,6 +84,7 @@ alias shutdown='sudo shutdown now'
 alias update='sudo /home/tenka/./upgrade.sh'
 alias nixupdate='cd /home/tenka/mydotfiles/nix_configuration_file && nix flake update && nix run home-manager/master -- switch --flake .#tenka' #Update nix
 alias snvim='sudo env "PATH=$HOME/.nix-profile/bin:$PATH" nvim -u /home/tenka/.config/nvim/init.lua'
+alias flu='flatpak update -y'
 
 # =============================
 # Terminal Rocky Linux

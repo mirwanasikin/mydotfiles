@@ -1,0 +1,111 @@
+add_newline = false
+
+format = """
+$username@$hostname \
+$directory\
+$git_branch\
+$git_status\
+$c\
+$cpp\
+$rust\
+$golang\
+$python\
+$nodejs\
+$java\
+$terraform\
+$character
+"""
+
+# -----------------------
+# USERNAME
+# -----------------------
+[username]
+show_always = true
+style_user = "bold cyan"
+format = "[$user]($style)"
+
+# -----------------------
+# HOSTNAME
+# -----------------------
+[hostname]
+ssh_only = false
+style = "bold dimmed white"
+format = "[$hostname]($style)"
+
+# -----------------------
+# DIRECTORY
+# -----------------------
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+style = "bold blue"
+
+# -----------------------
+# GIT
+# -----------------------
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "red"
+
+# -----------------------
+# LANGUAGES
+# -----------------------
+
+# C
+[c]
+symbol = " "
+style = "blue"
+format = "[$symbol$version]($style) "
+
+# C++
+[cpp]
+symbol = " "
+style = "blue"
+format = "[$symbol$version]($style) "
+
+# Rust
+[rust]
+symbol = "🦀 "
+style = "red"
+format = "[$symbol$version]($style) "
+
+# Go
+[golang]
+symbol = " "
+style = "cyan"
+format = "[$symbol$version]($style) "
+
+# Python
+[python]
+symbol = "🐍 "
+style = "yellow"
+format = "[$symbol$version]($style) "
+
+# Node
+[nodejs]
+symbol = "⬢ "
+style = "green"
+format = "[$symbol$version]($style) "
+
+# Java
+[java]
+symbol = "☕ "
+style = "red"
+format = "[$symbol$version]($style) "
+
+# Terraform
+[terraform]
+symbol = "💠 "
+style = "magenta"
+format = "[$symbol$version]($style) "
+
+# -----------------------
+# PROMPT SYMBOL
+# -----------------------
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+

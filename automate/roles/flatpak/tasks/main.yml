@@ -7,10 +7,8 @@
 - name: Install Flatpak apps
   flatpak:
     name:
-      - com.vscodium.codium
-      - md.obsidian.Obsidian
-      - org.onlyoffice.desktopeditors
-      - org.ferdium.Ferdium
-      - com.github.tchx84.Flatseal
+      - com.spotify.Client
+      - app.zen_browser.zen 
+      - it.mijorus.gearlever
     state: present
 

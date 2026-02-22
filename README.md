@@ -2,9 +2,11 @@
 
 ## Message
 if you're Indonesian please read the [Indonesia version](README-ID.md)
-it's Personal setup for Fedora Workstation feel free if you want to use it.
+it's Personal setup for Fedora Everything feel free if you want to use it.
 
 > **I do not own the upstream project and i will mention the source i used**
+
+> **This Configuration mixing between DNF, Flatpak and Nix. It's not recommended for newbie to use this Configuration. Do at your own risk**
 
 ## Configuration 
 This repository setup for 

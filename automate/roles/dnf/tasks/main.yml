@@ -4,10 +4,15 @@
       - docker
       - docker-compose
       - podman-compose
+      - podman 
       - distrobox
       - alacritty
       - zsh
       - lm_sensors
+      - mpv 
+      - firewalld
+      - zsh-autosuggestion
+      - zsh-syntax-highlighting
     state: present
 
 - name: Enable Docker service
