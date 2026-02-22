@@ -3,8 +3,8 @@
 set -euo pipefail
 
 # List Aplikasi
-list_dnf=(zsh alacritty docker docker-compose distrobox lm_sensors, gcc gcc-c++ podman podman-compose mpv firewalld toolbox)
-list_fp=(app.zen_browser.zen com.spotify.Client it.mijorus.gearlever)
+list_dnf=(zsh alacritty gcc gcc-c++ podman podman-compose mpv firewalld toolbox clamav kdeconnectd)
+list_fp=(app.zen_browser.zen com.spotify.Client com.protonvpn.www com.google.Chrome)
 
 # DNF
 instal_dnf() { dnf install -y "$@" || true; }
